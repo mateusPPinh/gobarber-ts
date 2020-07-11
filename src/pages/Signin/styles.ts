@@ -34,6 +34,7 @@ export const Content = styled.div`
       border: 2px solid #232129;
       padding: 16px;
       width: 100%;
+      color: #f4ede8;
 
       & + input {
         margin-top: 8px;
@@ -55,6 +56,29 @@ export const Content = styled.div`
       &:hover {
         background: ${shade(0.2, '#ff9000')};
       }
+    }
+
+    a {
+      color: #f4ede8;
+      text-decoration: none;
+      margin-top: 24px;
+      display: block;
+      transition: color 0.2s;
+
+      &:hover {
+        color: ${shade(0.2, '#f4ede8')};
+      }
+    }
+  }
+
+  > a {
+    display: flex;
+    align-items: center;
+    color: #ff9000;
+    text-decoration: none;
+
+    svg {
+      margin-right: 10px;
     }
   }
 `;
