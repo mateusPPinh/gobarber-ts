@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiArrowLeft, FiMail, FiLock, FiUser } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 import logo from '../../assets/logo.svg';
 import Button from '../../components/Button';
@@ -36,10 +37,10 @@ const Signup: React.FC = () => {
           <Button type="submit">Criar conta</Button>
         </form>
 
-        <a href="/">
+        <Link to="/">
           <FiArrowLeft />
           Voltar
-        </a>
+        </Link>
       </Content>
     </Container>
   );
